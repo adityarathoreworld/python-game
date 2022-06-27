@@ -17,17 +17,17 @@ def play():
         if(Gesture == "paper"):
             print("You won, computer had selected %s" % computer)
         else:
-            print("you lost, computer had selected %s" % computer)
+            print("you lose, computer had selected %s" % computer)
     elif(computer == "paper"):
         if(Gesture == "scissor"):
             print("You won, computer had selected %s" % computer)
         else:
-            print("you lost, computer had selected %s" % computer)
+            print("you lose, computer had selected %s" % computer)
     elif(computer == "scissor"):
         if(Gesture == "rock"):
             print("You won, computer had selected %s" % computer)
         else:
-            print("you lost, computer had selected %s" % computer)
+            print("you lose, computer had selected %s" % computer)
 while playagain == "yes":
     play()
     playagain = input("wanna play again? Enter yes or no - ")
