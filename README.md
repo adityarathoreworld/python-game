@@ -8,3 +8,4 @@ Current Games
 1) Rock Paper Scissor Console Edition (27/06/2022)
 2) Guess the number game (27/06/2022)
 3) Prime number (Basic Edition) (28/06/2022)
+4) Find Prime number (Square Root Method) (29/06/2022)
