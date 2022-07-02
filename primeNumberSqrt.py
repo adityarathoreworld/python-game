@@ -7,18 +7,18 @@ Number = int(input('enter a number: '))
 numsqrt= ceil(sqrt(Number))
 
 ### creating list of prime number upto 'numsqrt' for range of multiples
-factors = [2,3,5,7,9] ### basic primes from 1 - 10
-for num in range(10, numsqrt):
-    if num > 1:
+QueryComplete = False ### identify when to stop query
+isPrime = True ### assuming number is prime
+for num in range(2, numsqrt): ### Iteration Range to get prime
+    if QueryComplete == False: ###if number is prime 
         for i in range (2,  num):
             if num % i == 0:
                 break
-            elif num not in factors:
-                factors.append(num)
-### checking if your number is prime is simple now lets see
-for x in factors:
-    if Number % x == 0:
-        print(f"{Number} is not a prime number {x} is a factor")
-        break
-else:
+            elif Number % i == 0:
+                print(f"{Number} is not a prime number {i} is a factor")
+                QueryComplete = True
+                isPrime = False ### condition failed number is not a prime number
+                break
+    
+if isPrime == True:
     print(f"{Number} is a prime number")
